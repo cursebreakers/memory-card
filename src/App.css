@@ -11,7 +11,7 @@
   will-change: filter;
   transition: filter 300ms;
 }
-.logo:hover {
+.div:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
 .logo.react:hover {
@@ -33,10 +33,72 @@
   }
 }
 
-.card {
-  padding: 2em;
+.pokeBoard {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 
-.read-the-docs {
-  color: #888;
+.pokeGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+
+}
+
+.pokeCard {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0px;
+  border: 1px solid azure;
+  border-radius: 4px;
+  background-color: #111111;
+  color: azure;
+}
+
+.pokeCard > div {
+  padding: 4px;
+  border: 1px solid azure;
+  border-radius: 4px;
+  height: 218px;
+}
+
+.pokeName {
+  grid-column: 1;
+}
+
+.pokeSprite {
+  min-width: 80px;
+}
+
+.pokeSkills {
+  grid-column: 2 / span 2;
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: space-around;
+  padding: 12px;
+}
+
+.winGame {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  background-color: aqua;
+  color: #111111;
+}
+
+.endStreak {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  background-color: aqua;
+  color: #111111;
+}
+
+.winGif {
+  max-width: 240px;
+  margin: 8px;
+  border: 1px solid #111;
+  border-radius: 6px;
 }
