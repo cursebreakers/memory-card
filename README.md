@@ -1,3 +1,3 @@
-# Memory Card Game - The Odin Project React Course
+# Memory Card Game
 
-This project was built using VIte + React template.
+Fun memory shuffle game for The Odin Project React Course.
